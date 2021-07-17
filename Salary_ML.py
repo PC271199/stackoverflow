@@ -61,6 +61,7 @@ def find_optimal_lm_mod(X, y, cutoffs, test_size = .30, random_state=42, plot=Tr
     X_train, X_test, y_train, y_test - output from sklearn train test split used for optimal model
     '''
     r2_scores_test, r2_scores_train, num_feats, results = [], [], [], dict()
+    
     for cutoff in cutoffs:
 
         #reduce X matrix
